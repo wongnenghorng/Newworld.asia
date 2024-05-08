@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures the video covers the hero area */
+    z-index: -1;
+}
+
+nav {
+    background: rgba(12, 3, 51, 0.3);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+nav .logo {
+    width: 80px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.content {
+    text-align: center;
+    z-index: 1;
+}
+
+.content h1 {
+    font-size: 140px;
+    color: white;
+    font-weight: 600;
+}
+
+.content p {
+    color: white;
+    font-size: 24px;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.about-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    align-items: stretch; /* Align items to stretch in the container */
+    color: #333; /* Text color for better readability */
+}
+
+.left-section, .right-section {
+    flex: 1; /* Each section takes half of the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.left-section {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+.right-section {
+    background: #fff; /* Light background for the text section */
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Space below the header */
+}
+
+
+.right-section h2 {
+    font-size: 24px; /* Large font size for visibility */
+    color: #333;
+}
+
+.right-section p {
+    font-size: 16px; /* Readable text size */
+    line-height: 1.5; /* Spacing for line height */
+    max-width: 500px; /* Max width for better reading experience */
+    text-align: justify; /* Justify text for better alignment */
+}
+
+.more-info {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Bootstrap primary blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 20px; /* Space above the button */
+}
+
+.more-info:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.objective-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: burlywood; /* Assuming a white background */
+}
+
+.text-section {
+    width: 50%;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.image-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    width: 90%; /* Adjust according to your design */
+    height: auto;
+}
+
+.benefit-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    justify-content: center; /* Horizontally center the content */
+    padding: 50px;
+    background-color: #fff; /* White background for clear contrast */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    width: 100%; /* Full width */
+    height: auto; /* Height as needed */
+}
+
+/* Left section for logos */
+.left-section {
+    width: 40%; /* Takes 40% of the container's width */
+    text-align: center; /* Centers the logos inside this div */
+    padding-right: 50px; /* Space between the logos and the text */
+}
+
+.left-section img {
+    width: 80%; /* Slightly smaller width than the container for padding */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space between each logo if multiple */
+}
+
+/* Right section for text */
+.right-section {
+    width: 60%; /* Takes the remaining 60% of the container's width */
+}
+
+.right-section .header h2 {
+    font-size: 24px; /* Larger text for header */
+    color: #333; /* Darker text color for better readability */
+    margin-bottom: 10px; /* Space below the header */
+}
+
+.right-section h3 {
+    font-size: 20px;
+    color: #0056b3; /* Example of a color, can be adjusted */
+    margin-bottom: 20px; /* Space below sub-header */
+}
+
+.right-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666; /* Lighter text color for the paragraph */
+}
+
+@media (max-width: 768px) {
+    .benefit-container {
+        flex-direction: column; /* Stack the logo and text on smaller screens */
+    }
+    .left-section, .right-section {
+        width: 100%; /* Full width for each section */
+        padding: 20px; /* Adequate padding */
+        text-align: center; /* Center aligning the text for mobile */
+    }
+    .left-section {
+        padding-bottom: 20px; /* Space between the sections */
+    }
+}
+
+body {
+    background-color: lightgrey; /* Dark gray background */
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.services-container {
+    width: 100%;
+    max-width: 1200px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the container */
+    padding: 40px 20px; /* Increased padding */
+}
+
+.section-title {
+    font-size: 32px; /* Increased font size */
+    margin: 40px 0; /* Increased margin */
+}
+
+.services-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the services within the section */
+    gap: 40px; /* Increased gap */
+}
+
+.service {
+    background-color: #444; /* Lighter gray for the service cards */
+    border-radius: 20px;
+    width: calc(33.33% - 60px); /* Adjust width for 3 columns with increased spacing */
+    padding: 30px; /* Increased padding */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5); /* Enhanced shadow for better depth */
+    text-align: center;
+}
+
+.service img {
+    width: 120px; /* Increased size */
+    height: auto;
+    margin-bottom: 30px; /* Increased margin */
+}
+
+.service h3 {
+    margin: 20px 0; /* Increased margin */
+    font-size: 20px; /* Increased font size */
+}
+
+.service p {
+    color:white;
+    font-size: 16px; /* Increased font size */
+}
+
+@media (max-width: 1200px) {
+    .service {
+        width: 50%; /* Adjust for smaller screens, 2 columns */
+    }
+}
+
+@media (max-width: 768px) {
+    .services-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service {
+        width: 90%; /* Full width on smaller screens */
+    }
+}
+
+/* Base Styles */
+.footer {
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background: linear-gradient(to right, #caa7e3, #db2dd6); /* Gradient background */
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.company-info img {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.links ul, .contact .social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.links ul li, .social-icons a {
+    margin-bottom: 10px;
+}
+
+.links ul li a, .contact p {
+    color: #DDD; /* Light grey for readability */
+    text-decoration: none;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section {
+        text-align: center;
+    }
+}
+
+
+
